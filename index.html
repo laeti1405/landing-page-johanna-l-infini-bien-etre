@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rejoignez-moi au Salon du Massage à Cannes les 7, 8 et 9 mars 2025 au Palais des Festivals. Bénéficiez d'une séance découverte ou d'une offre exclusive de 10 % de réduction sur votre premier massage à domicile." />
+  <title>Salon du Massage Cannes – Johanna l’Infini Bien-Être</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 15px;
+      background-color: white;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    header img {
+      height: 100px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .hero img {
+      width: 70%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-family: 'Rouge Script', cursive;
+      font-size: 55px;
+      line-height: 1.2;
+      color: #874710;
+      text-align: center;
+      width: auto;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+
+    h2 {
+      color: #874710;
+      font-size: 37px;
+      font-family: 'Rouge Script', cursive;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: #000000;
+      font-size: 33px;
+      font-family: 'Rouge Script', cursive;
+      text-align: left;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    .left-green-title {
+  text-align: left;
+  color: #25a31f;
+  font-family: 'Rouge Script', cursive;
+  font-size: 37px;
+  white-space: nowrap;
+  margin-bottom: -10px;
+}
+
+    .centered-text {
+      text-align: center;
+      width: auto;
+      margin: auto;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      margin: 10px 0 30px 0;
+    }
+
+    .text-block {
+      flex: 1;
+    }
+
+    .image-block {
+      flex: 1;
+    }
+
+    .image-block img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: 0;
+  align-self: flex-start;
+  margin-top: 40px;
+    }
+
+    .btn-cta {
+      display: inline-block;
+      margin: 10px auto;
+      background-color: rgba(143, 216, 75, 0.77);
+      color: #874710;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 12px;
+      border: 2px solid #874710;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .btn-cta:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-image: url("https://infini-bien-etre.fr/wp-content/uploads/2025/06/background_footer.jpg");
+      background-size: cover;
+      padding: 60px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    footer img {
+      max-width: 170px;
+      margin-top: -30px;
+    }
+
+    .footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 0 auto;
+}
+
+    .footer-column {
+      width: 30%;
+      min-width: 200px;
+      text-align: left;
+    }
+
+    .footer-column h3 {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .footer-column a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0;
+    }
+
+    .footer-bottom {
+      margin-top: 30px;
+      font-size: 0.9em;
+    }
+
+    footer strong {
+  color: #000;
+  font-size: 1.2em;
+}
+
+.footer-column h3 {
+  color: #000;
+}
+
+.footer-wrapper {
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menu-toggle {
+  display: block;
+  width: 28px;
+  height: auto;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+  nav.nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+  }
+
+  nav.nav-menu.show {
+    display: flex;
+  }
+
+  nav.nav-menu a {
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    width: 100%;
+  }
+
+  .image-row {
+    flex-direction: column-reverse;
+  }
+
+  .text-block, .image-block {
+    width: 100%;
+  }
+
+  .image-block img {
+  margin-top: 40px;
+  margin-bottom: -40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2, .left-green-title {
+    font-size: 28px;
+    white-space: normal;
+  }
+
+  h2 {
+  text-align: center;
+}
+
+.left-green-title {
+  text-align: left;
+}
+
+  main {
+    padding: 20px 10px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-wrapper {
+    padding-left: 20px;
+  }
+
+  .btn-cta {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  nav.nav-menu {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+    border-top: none;
+    margin-top: 0;
+  }
+
+  nav.nav-menu a {
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://infini-bien-etre.fr/wp-content/uploads/2025/05/Logo-simplifie-menu-mobile-1.svg" alt="Logo Johanna" />
+    <img src="https://infini-bien-etre.fr/wp-content/uploads/2025/06/more.png" alt="Menu" id="menu-toggle" />
+    <nav id="mobile-menu" class="nav-menu">
+      <a href="https://infini-bien-etre.fr/">Accueil</a>
+      <a href="https://infini-bien-etre.fr/mon-histoire-therapeute-reiki-la-gaude/">Mon histoire</a>
+      <a href="https://infini-bien-etre.fr/prestations-et-offres-massage-a-domicile/">Prestations & Offres</a>
+      <a href="https://infini-bien-etre.fr/week-end-ressourcement/">Week-end ressourcement</a>
+      <a href="https://infini-bien-etre.fr/contact-reserver-un-massage-a-domicile/">Contact</a>
+      <a href="https://infini-bien-etre.fr/blog-massage-et-bien-etre/">Blog</a>
+    </nav>
+  </header>  
+
+  <div class="hero">
+    <img src="https://infini-bien-etre.fr/wp-content/uploads/2025/06/salon_du_massage_cannes_2025-e1749039526785.jpg" alt="Salon du massage à Cannes">
+  </div>
+
+  <main>
+    <h1>Salon du massage Cannes 2025 : Venez me rencontrer<br>et offrez-vous un moment rien qu’à vous !</h1>
+  
+    <h2>Un événement bien-être à ne pas manquer à Cannes</h2>
+    <p class="centered-text">
+      Le <strong>Salon du massage à Cannes</strong> revient au <strong>Palais des Festivals</strong> les <strong>7, 8 et 9 Mars 2025</strong>, réunissant les meilleurs professionnels du secteur pour un week-end entièrement dédié à <strong>la relaxation</strong>, à <strong>la détente</strong> et à <strong>la reconnexion à soi</strong>.
+      Avec plus de <strong>140 exposants</strong>, des <strong>ateliers découverte</strong>, des <strong>conférences</strong>, des <strong>animations sensorielles</strong> et des <strong>démonstrations de techniques variées</strong>, ce salon est l’occasion parfaite pour explorer <strong>l’univers du bien-être</strong>.
+    </p>
+  
+    <br>
+  
+    <p class="centered-text">
+      Depuis plus de 10 ans, <strong>le salon du massage de Cannes</strong> s’est imposé comme un <strong>rendez-vous incontournable de la Côte d’Azur</strong>, attirant chaque année plusieurs milliers de visiteurs, curieux ou passionnés.
+      Entre ateliers sensoriels, conférences inspirantes, démonstrations de techniques traditionnelles ou innovantes (Shiatsu, Tui Na, drainage, relaxation coréenne…), chacun y trouve <strong>des réponses à ses besoins</strong> et <strong>l’opportunité de s’ouvrir à de nouvelles pratiques</strong>.
+    </p>
+  
+    <br>
+  
+    <p class="centered-text">
+      Un moment suspendu, dans un cadre chaleureux, pour prendre soin de soi… ou offrir un instant de bien-être à ses proches.
+    </p>
+  
+    <h2>Retrouvez-moi au salon du massage à Cannes</h2>
+    <p class="centered-text">
+      <strong>Thérapeute spécialisée en massage énergétique à domicile</strong>, je serai présente au <strong>salon du massage à Cannes</strong>, au <strong>Palais des Festivals</strong>,
+      pour vous faire découvrir mon <strong>approche personnalisée et intuitive du bien-être</strong>.
+      Combinant trois techniques ancestrales – <strong>acupression</strong>, <strong>réflexologie</strong> et <strong>Reiki</strong> – je crée des séances de massage sur mesure, centrées sur l’énergie et l’écoute du corps.
+    </p>
+  
+    <br>
+  
+    <p class="centered-text">
+      Venez me rencontrer, échanger autour de vos besoins, poser vos questions, et bénéficier de mes conseils bien-être dans une ambiance chaleureuse et apaisante.
+    </p>
+
+    <div class="image-row">
+      <div class="text-block">
+        <h2 class="left-green-title">Offres exclusives salon</h2>
+<p>
+  Je vous propose deux offres spéciales limitées :
+<p>✨ <strong>Séance découverte sur place → 30 minutes pour 30 €</strong>, pour expérimenter les bienfaits d’un massage énergétique.</p>
+<p>✨ <strong>-10 % sur votre premier massage à domicile</strong>, si vous prenez rendez-vous directement sur place.</p>
+<p>
+  C’est le moment parfait pour tester, ressentir et vous reconnecter à vous-même.
+</p>
+
+        <h2 class="left-green-title">Infos pratiques – Salon du massage Cannes</h2>
+        <ul>
+          <li><strong>📅 Dates :</strong> 7, 8 et 9 Mars 2025</li>
+          <li><strong>📍 Lieu :</strong> Palais des Festivals, Cannes</li>
+          <li><strong>🕒 Horaires :</strong> Ven & Sam : 10h/19h - Dim : 10h/18h</li>
+          <li><strong>🎫 Entrée :</strong> 3€</li>
+          <li><strong>🔎 Emplacement :</strong> Stand N°12</li>
+        </ul>
+      </div>
+      <div class="image-block">
+        <img src="https://infini-bien-etre.fr/wp-content/uploads/2025/06/espace_cocooning_salon_du_massage_cannes.jpg" alt="Espace cocooning">
+      </div>
+    </div>
+
+    <p style="text-align: center;">
+      <a class="btn-cta" href="https://infini-bien-etre.fr/contact-reserver-un-massage-a-domicile/">👉 Réservez votre place pour le salon 👈</a>
+    </p>
+  </main>
+
+  <footer>
+    <img src="https://infini-bien-etre.fr/wp-content/uploads/2024/12/Logo-couleur-fond-blanc.svg" alt="Logo" />
+    <p><strong>Mon objectif :</strong></p>
+    <p>Instaurer de nouvelles habitudes et intégrer le massage dans votre routine, offrant ainsi un temps de relaxation et de bien-être personnel constant.</p>
+
+    <p><strong>Mon engagement :</strong></p>
+    <p>Prendre soin de vous sur le long terme, en vous accompagnant à travers les diverses problématiques émotionnelles que vous pourriez rencontrer tout au long de votre vie. 
+      <br>Je crois en l’importance d’une prise en charge régulière et continue.</p>
+
+    <div class="footer-wrapper">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>Rien que pour vous…</h3>
+          <a href="https://infini-bien-etre.fr/mon-histoire-therapeute-reiki-la-gaude/">Mon histoire</a>
+          <a href="https://infini-bien-etre.fr/prestations-et-offres-massage-a-domicile/">Prestations & Offres</a>
+          <a href="https://infini-bien-etre.fr/week-end-ressourcement/">Week-end Ressourcement</a>
+          <a href="https://infini-bien-etre.fr/blog-massage-et-bien-etre/">Blog</a>
+        </div>
+        <div class="footer-column">
+          <h3>Liens utiles</h3>
+          <a href="https://infini-bien-etre.fr/mentions-legales/">Mentions légales</a>
+          <a href="https://infini-bien-etre.fr/politique-de-confidentialite/">Politique de confidentialité</a>
+        </div>
+        <div class="footer-column">
+          <h3>Contactez-moi</h3>
+          <a href="mailto:jdaviau06@gmail.com">jdaviau06@gmail.com</a>
+          <a href="tel:0612618456">06 12 61 84 56</a>
+          <p>
+            <a href="https://www.facebook.com/johanna.daviau.52" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/l_infini_bien_etre?igsh=MXdsM204dXJlNXd3cQ%3D%3D" target="_blank">Instagram</a>
+          </p>
+        </div>
+      </div>
+    </div>    
+
+    <div class="footer-bottom">
+      Johanna L’infini Bien-Être © 2024 par Laëtitia BINON
+        </div>
+  </footer>
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("mobile-menu");
+  
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
+  </script>
+  
+</body>
+</html>
